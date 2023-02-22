@@ -1,0 +1,28 @@
+PEOPLE_SCHEMA:
+  nodes:
+    personal_node:
+      attrs:
+        name:
+          feature: name
+          type: str
+        age:
+          feature: age
+          type: int  
+      label: personal
+
+    jop_node:
+      attrs:
+        company:
+          feature: company_name
+          type: str
+        category:
+          feature: jop_category
+          type: str 
+      label: jop
+
+  relations: 
+    personal_jop_rel:
+      start: personal
+      end: jop
+      label: 'DO_WORK'
+     
